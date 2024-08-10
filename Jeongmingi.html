@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeongmingi</title>
+  <link rel="stylesheet" href="./Jeongmingi.css">
+</head>
+<body>
+  <div id="fixed">예매하기</div>
+  <button id="fixed2" onclick="scrollToTop()">↑</button>
+  <script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    }
+</script>
+  <header>
+    <div class="header_advertisement">     
+      <img src="./img/헤더 광고.PNG">    
+    </div>
+    <div class="header_container">
+      <div class="CGV_logo"><img src="./img/헤더 cgv 로고.PNG"></div>
+      <div class="header_textbox">DEEP DIVE SPACE</div>
+      <div class="header_hynde">
+      </div>
+      <div class="login_logo"><img src="./img/로그인 로고.PNG"></div>
+      <div class="signin_logo"><img src="./img/회원가입 로고.PNG"></div>
+      <div class="mycgv_logo"><img src="./img/my cgv 로고.PNG"></div>
+      <div class="center_logo"><img src="./img/고객센터 로고.PNG"></div>
+    </div>
+    <nav id="navbar">    
+      <ul>
+        <li class="dropdown">
+          <div class="dropdown-menu">영화</div>
+          <div class="dropdown-content">           
+            <a href="#">영화</a>
+            <a href="#">C무비차트</a>
+            <a href="#">아트하우스</a>
+            <a href="#">ICECON</a>  
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="dropdown-menu">극장</div>
+          <div class="dropdown-content">
+            <a href="#">극장</a>
+            <a href="#">CGV 극장</a>
+            <a href="#">특별관</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="dropdown-menu">예매</div>
+          <div class="dropdown-content">
+            <a href="#">예매</a>           
+            <a href="#">빠른예매</a>
+            <a href="#">상영스케줄</a>
+            <a href="#">English Ticketing</a>
+            <a href="#">English Schedule</a>  
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="dropdown-menu">스토어</div>
+          <div class="dropdown-content">           
+            <a href="#">스토어</a>
+            <a href="#">영화관람권</a>
+            <a href="#">기프트카드</a>
+            <a href="#">콤보</a>
+            <a href="#">팝콘</a> 
+            <a href="#">음료</a>
+            <a href="#">스낵</a>
+            <a href="#">플레이존</a>
+            <a href="#">씨네샵></a>  
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="dropdown-menu">이벤트</div>
+          <div class="dropdown-content">           
+            <a href="#">SPECIAL</a>
+            <a href="#">영화/예매</a>
+            <a href="#">멤버십/CLUB</a>
+            <a href="#">CGV 극장별</a>
+            <a href="#">제휴할인</a>
+            <a href="#">당첨자 발표</a>
+            <a href="#">종료된 이벤트</a>  
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="dropdown-menu">혜택</div>
+          <div class="dropdown-content">           
+            <a href="#">CGV 할인정보</a>
+            <a href="#">CLUB 서비스</a>
+            <a href="#">VIP 라운지</a>
+          </div>
+        </li>
+        <li class="search">
+          <form>
+            <input type="text" placeholder="봇치 더 록! 전편">
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      window.onscroll = function() {makeSticky()};
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      var fixed = document.getElementById("fixed");
+      var fixed2 = document.getElementById("fixed2");
+      function makeSticky() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky");
+              fixed.style.display="block";
+              fixed2.style.display="block";
+          } else {
+              navbar.classList.remove("sticky");
+              fixed.style.display="none";
+              fixed2.style.display="none";
+          }
+      }
+  </script>
+  </header>
+  <main>
+    <section class="main_advertisement">
+      <img src="./img/main_advertisement.jpg">
+    </section>
+    <section>
+      <div class="movie_chart">
+        <div class="moviechart_container">
+          <div class="moviechart_textbox1">무비차트</div>
+          <div class="moviechart_textbox2">상영예정작</div>
+          <button type="button" class="button">
+            전체보기 >
+          </button>
+        </div>
+        <div id="moviechart_articlecontainer" class="moviechart_articlecontainer">
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart1.jpg" alt="오류">
+            <div class="article_number">1</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">세븐틴 투어 '팔로우..'</p>
+          </div>
+        </article>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart2.jpg" alt="오류">
+            <div class="article_number">2</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">파일럿</p>
+          </div>
+        </article>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart3.jpg" alt="오류">
+            <div class="article_number">3</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">사랑의 하츄핑</p>
+          </div>
+        </article>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart4.jpg" alt="오류">
+            <div class="article_number">4</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">행복의 나라</p>
+          </div>
+        </article>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart5.jpg" alt="오류">
+            <div class="article_number">5</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">빅토리</p>
+          </div>
+        </article>
+        <button type="button" class="circle_button">></button> 
+        </div> 
+      
+
+      <div id="moviechart_articlecontainer2" class="moviechart_articlecontainer2">
+        <button type="button" class="circle_button2"><</button>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart6.jpg" alt="오류">
+            <div class="article_number">6</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">리볼버</p>
+          </div>
+        </article>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart7.jpg" alt="오류">
+            <div class="article_number">7</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">에이리언-로물루스</p>
+          </div>
+        </article>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart8.jpg" alt="오류">
+            <div class="article_number">8</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">트위스터스</p>
+          </div>
+        </article>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart9.jpg" alt="오류">
+            <div class="article_number">9</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">극장총집편 봇치 더 ...</p>
+          </div>
+        </article>
+        <article>
+          <div class="chart_box">
+            <img src="./img/chart10.jpg" alt="오류">
+            <div class="article_number">10</div>
+            <div class="chartbox_text2">상세보기</div>
+            <div class="chartbox_text">예매하기</div>
+            <p style="text-align: center; font-size: 16px;">데드풀과 울버린</p>
+          </div>
+        </article> 
+      </div>
+    </div> 
+    </div>
+      <script>
+        document.querySelector('.circle_button').addEventListener('click', function() {
+          var moviechartarticlecontainer = document.getElementById('moviechart_articlecontainer');
+          var moviechartarticlecontainer2 = document.getElementById('moviechart_articlecontainer2');
+          moviechartarticlecontainer.style.transform = 'translateX(-100%)';
+          moviechartarticlecontainer.style.opacity = '0';
+          moviechartarticlecontainer2.style.transform = 'translateX(0)';
+          moviechartarticlecontainer2.style.opacity = '1';
+        });
+        document.querySelector('.circle_button2').addEventListener('click', function() {
+          var moviechartarticlecontainer2 = document.getElementById('moviechart_articlecontainer2');
+          var moviechartarticlecontainer = document.getElementById('moviechart_articlecontainer');
+          moviechartarticlecontainer.style.transform = 'translateX(0)';
+          moviechartarticlecontainer.style.opacity = '1';
+          moviechartarticlecontainer2.style.transform = 'translateX(100%)';
+          moviechartarticlecontainer2.style.opacity = '0';
+        });
+    </script>
+
+    </section>
+    <section>
+      <div class="event">
+        <div class="event_container">
+          <div class="event_textbox">EVENT</div>
+          <button type="button" class="button">
+            전체보기 >
+          </button>
+        </div>
+        <div class="event_articlecontainer">
+          <article>
+            <img src="./img/event1.jpg">
+          </article>
+          <article>
+            <img src="./img/event2.jpg">
+          </article>
+        </div>
+        <div class="event_text">
+          <div class="event_text1"><b>깊이 빠져 보다, CGV</b>
+            
+            <p style="color: gray;">2024.07.22~2024.08.18</p>
+          </div>
+          <div class="event_text2"><b><깊이 빠져 보다:ALBERT></b>
+            <p style="color:gray;">
+            2024.07.22~2024.08.31</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="theater">
+        <div class="theater_textcontainer">
+          <div class="theater_textbox">특별관</div>
+          <button type="button" class="button">
+            전체보기 >
+          </button>
+        </div>
+        <div class="theater_container">
+          <article class="theatertext1">SUIT CINEMA</article>
+          <article class="theatertext2">CINE & LININGROOM</article>
+          <article class="theatertext3">4DX</article>
+          <article class="theatertext4">CINE de CHEF</article>          
+          <div class="theater_picture"></div>
+          <div class="theater_tag1">#호텔 컨셉의 프리미엄관</div>
+          <div class="theater_tag2">#신개념 소셜 상영관</div>
+          <div class="theater_tag3">#모션시트 #오감체험</div>
+          <div class="theater_tag4">#쉐프가 있는 영화관</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="List">
+        <div class="package">
+          <div class="package_textbox">패키지</div>
+          <div class="package_picture"><img src="./img/package1.jpg"></div>
+          <div class="package_picture"><img src="./img/package2.jpg"></div>
+          <div class="package_picture"><img src="./img/package3.jpg"></div>
+        </div>
+        <div class="ticket">
+        <div class="ticket_textbox">영화관람권</div>
+          <div class="ticket_picture"><img src="./img/ticket1.jpg"></div>
+          <div class="ticket_picture"><img src="./img/ticket2.jpg"></div>
+          <div class="ticket_picture"><img src="./img/ticket3.jpg"></div>
+        </div>
+        <div class="giftcard">
+          <div class="giftcard_textbox">기프트카드</div>
+          <div class="giftcard_picture"><img src="./img/giftcard1.jpg"></div>
+          <div class="giftcard_picture"><img src="./img/giftcard2.jpg"></div>
+          <div class="giftcard_picture"><img src="./img/giftcard3.jpg"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="announcement">
+        <div class="announcement1">
+          <div class="announcement_textbox">공지사항  [기타][CGV] 해피머니상품권 사용중지 안내</div>
+          <div class="customer_center">고객센터   1544-1122<br>
+            <p>고객센터 운영시간 (평일 09:00~18:00)</p>
+            <p>업무시간 외 자동응답 안내 가능합니다.</p>
+          </div>
+          <div class="announcement_box">
+            <button class="button">FAQ</button>
+            <button class="button">1:1 문의</button>
+            <button class="button">대관/단체 문의</button>
+          </div>
+        </div>
+        <div class="announcement2">
+          <img src="./img/announcement2.jpg">
+        </div>
+        <div class="announcement3">
+          <img src="./img/announcement.jpg">
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_tagbox">
+      <a href="#">회사소개</a>
+      <a href="#">지속가능경영</a>
+      <a href="#">IR</a>
+      <a href="#">채용정보</a>
+      <a href="#">광고/제휴/출점문의</a>
+      <a href="#">이용약관</a>
+      <a href="#">편성기준</a>
+      <a href="#"><b>개인정보처리방침</b></a>
+      <a href="#">법적고지</a>
+      <a href="#">이메일주소무단수집거부</a>
+      <a href="#">윤리경영</a>
+      <a href="#">사이버검사실</a>
+    </div>
+    <div class="footer_departmentinfo">
+      <p>[04377]서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
+      <p>대표이사 : 허민회 사업자등록번호 : 104-81-45690 통신판매업신고번호 : 2017-서울용산-0662 사업자정보확인</p>
+      <p>호스팅사업자 : CJ올리브네트웍스  개인정보보호 책임자 : 도형구  대표이메일 : cjcgvmaster@cj.net</p>
+      <p>CJ CGV. ALL Rights Reserved</p>
+    </div>
+      <label for="department"></label>
+        <select id="department" name="deparment">
+          <option value="" disabled selected>계열사 바로가기</option>
+          <optgroup label="CJ그룹">
+            <option value="group1">CJ주식회사</option>
+          </optgroup>
+          <optgroup label="식품 & 식품서비스">
+            <option value="food1">CJ제일제당</option>
+            <option value="food2">CJ푸드빌</option>
+            <option value="food3">CJ프레시웨이</option>
+          </optgroup>
+          <optgroup label="생명공학">
+            <option value="BIO1">CJ제일제당 BIO사업부문</option>
+            <option value="BIO2">CJ Feed&Card</option>
+          </optgroup>
+          <optgroup label="몰류 & 신유통">
+            <option value="circulation1">CJ대한통운</option>
+            <option value="circulation2">CJ대한통운 건설부문</option>
+            <option value="circulation3">CJ올리브영</option>
+            <option value="circulation4">CJ올리브네트웍스</option>
+            <option value="circulation5">CJ ENM 커머스부문</option>
+          </optgroup>
+          <optgroup label="엔터테인먼트 & 미디어">
+            <option value="enter1">CJ ENM 엔터테인먼트부문</option>
+            <option value="enter2">CJ CGV</option>
+          </optgroup>
+        </select>
+        <button class="button">GO</button> 
+  </footer>
+</body>
+</html>
